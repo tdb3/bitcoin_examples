@@ -3,7 +3,7 @@
 #### Install dependencies (as root)
 
     su root
-    apt update && apt install git build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler git ccache
+    apt update && apt install git build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler git ccache libsqlite3-dev
 
 #### Create and become user 'bitcoin'
 
