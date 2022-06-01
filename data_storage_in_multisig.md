@@ -38,7 +38,7 @@ Get the transaction details
 
     TX_DETAILS=$(bitcoin-cli -regtest -rpcwallet=testwallet1 gettransaction c903ed06abe5af8dc942902cd6c5df996297890034d20c79e8270a0690efb024)
 
-Where c903ed06abe5af8dc942902cd6c5df996297890034d20c79e8270a0690efb024 is the txid of the transaction that spent from the multisig.  
+Where `c903ed06abe5af8dc942902cd6c5df996297890034d20c79e8270a0690efb024` is the txid of the transaction that spent from the multisig.  
 
 Fetch the script (assembly view) used to spend the transaction, which includes our data pubkey, interpret as ascii and show.
 
