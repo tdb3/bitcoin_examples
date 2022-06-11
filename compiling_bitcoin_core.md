@@ -9,6 +9,7 @@
 
     /sbin/adduser bitcoin
     su bitcoin
+    cd
 
 #### Clone bitcoin core repo
 
