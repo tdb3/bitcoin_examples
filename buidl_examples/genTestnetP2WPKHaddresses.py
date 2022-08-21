@@ -1,4 +1,4 @@
-from buidl import *
+from buidl.hd import HDPrivateKey
 
 # Ask the user how many addresses they would like to generate
 print("Will generate P2WPKH addresses from mnemonic.  Testnet is used")
