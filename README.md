@@ -1,2 +1,2 @@
-# bitcoin examples
+# Bitcoin examples
 Various bitcoin-related tools, examples, snippets, and projects.
