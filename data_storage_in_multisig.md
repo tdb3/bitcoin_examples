@@ -3,7 +3,7 @@ A relatively simple way to store aribrary data (other than OP_RETURN) is to take
 Since the redeem script used in a P2SH multisig spend includes all pubkeys part of the multisig address (embedded in the script), one or more of the pubkeys can be sacrificed to store arbitrary data rather than the public key of a signer.  
 
 There are limitations to this data storage method.  
-For example, the data would need to be at most the size of a pubkey (e.g., 32 bytes for SEC compressed pubkeys, if the first byte indicating y type is excluded for data storage), the data would need to be a valid X-point on the secp256k1 eliptic curve ($y^2 = x^3 + 7$) and fit the characteristics of secp256k1 (e.g., order).  
+For example, the data would need to be at most the size of a pubkey (e.g., 32 bytes for SEC compressed pubkeys, if the first byte indicating y type is excluded for data storage), the data would need to be a valid X-point on the secp256k1 eliptic curve $(y^2 = x^3 + 7)$ and fit the characteristics of secp256k1 (e.g., order).  
 Also, since one ore more of the pubkeys are being used for data storage (for which we are unlikely to control the cooresponding private key), these keys reduce the redundancy of the multisg.  For example, a 2 of 3 multisig would effectively become a 2 of 2 multisig if one of the pubkeys was used for data storage.
 
 > **_NOTE:_** One of the differences between storing data in a threshold multisig vs an OP_RETURN is that OP_RETURNs are excluded from the UTXO set, and less data in the UTXO set is friendlier to scalability.
