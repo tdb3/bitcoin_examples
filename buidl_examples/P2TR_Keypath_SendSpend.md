@@ -29,7 +29,7 @@ Build, sign, and broadcast the transaction to spend the P2WPKH UTXO to the P2TR 
 ```
 >>> utxo1_txid = "txid associated with the utxo in a quoted string"
 >>> utxo1_index = 0 # appropriate output index associated with the UTXO
->>> tx1_in = TxIn(bytes.fromhex(utxo1_txid), utxo1_index) # Buid the 
+>>> tx1_in = TxIn(bytes.fromhex(utxo1_txid), utxo1_index)
 >>> fee = 500
 >>> amount1 = tx1_in.value(network="testnet") - fee
 >>> tx1_out = TxOut.to_address(p2tr_addr, amount1)
